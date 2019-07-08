@@ -1,0 +1,115 @@
+﻿###########################
+# Italian Events
+###########################
+
+add_namespace = italy
+country_event = {
+	id = italy.1
+	title = italy.1.t
+	desc = italy.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ITA
+		has_defensive_war = no
+		date > 1936.1.1# Trigger at some point after 1936 elections
+	}
+
+	mean_time_to_happen = {
+		days = 31	# Historical outbreak time after elections
+	}
+	
+	option = { # Support Nationalists
+		name = italy.1.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_capital = 159
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = communism
+				size = 0.5
+				capital = 2
+				states = { 2 157 117 156 115 114 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = ITA
+					has_government = communism
+				}
+				load_oob = "ITU_Civil_War"
+				set_equipment_fraction = 0.7
+				set_stability = 0.6
+				set_war_support = 0.5
+			}
+			news_event = { hours = 6 id = news.999 }
+			
+			load_oob = "ITA_Civil_War"
+			set_equipment_fraction = 1
+			set_stability = 0.9
+			set_war_support = 0.8
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+			random_other_country = {
+				limit = {
+					original_tag = ITA
+					has_government = communism
+				}
+				set_cosmetic_tag = ITA_civil_war
+			}
+
+		}
+	}
+	option = { # Support Republicans
+		name = italy.1.b
+		hidden_effect = {
+			start_civil_war = {
+				ideology = fascism
+				size = 0.5
+				capital = 159
+				states = { 159 158 161 160 39 736 162 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = ITA
+					has_government = fascism
+				}
+				set_equipment_fraction = 1
+				set_stability = 0.9
+				set_war_support = 0.8
+				load_oob = "ITA_Civil_War"
+			}
+			news_event = { hours = 6 id = news.999 }
+			
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.5
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}	
+			random_other_country = {
+				limit = {
+					original_tag = ITA
+					has_government = fascism
+				}
+				set_cosmetic_tag = ITA_civil_war
+			}
+			load_oob = "ITU_Civil_War"
+			set_equipment_fraction = 0.7
+			set_stability = 0.6
+			set_war_support = 0.5
+			
+		}
+	}
+}
+

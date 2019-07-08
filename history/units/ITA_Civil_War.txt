@@ -1,0 +1,171 @@
+﻿division_template = { 
+	name = "Divisione di Fanteria" 
+	division_names_group = ITA_INF_01 
+
+	# Represents nearly all infantry divisions
+	# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
+	# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
+	regiments = { 
+		infantry = { x = 0 y = 0 } 
+		infantry = { x = 0 y = 1 } 
+		infantry = { x = 0 y = 2 } 
+		infantry = { x = 1 y = 0 } 
+		infantry = { x = 1 y = 1 } 
+		infantry = { x = 1 y = 2 } 
+	} 
+	support = { 
+		engineer = { x = 0 y = 0 } 
+	} 
+} 
+
+units = {
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6606  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9907  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 11833  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6973  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6788  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6780	  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 3780  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 11598  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}division = {
+		name = "Divisione di Fanteria"
+		location = 11584  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6626  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6606  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9907  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 11833  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6973  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6788  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6780	  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 3780  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 11598  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}division = {
+		name = "Divisione di Fanteria"
+		location = 11584  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6626  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6606  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9907  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 11833  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6973  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6788  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6780	  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 3780  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 11598  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}division = {
+		name = "Divisione di Fanteria"
+		location = 11584  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6626  # Zaragoza
+		division_template = "Divisione di Fanteria"
+	}
+}
+
+	
