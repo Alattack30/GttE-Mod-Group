@@ -1,0 +1,30 @@
+state={
+	id=788
+	name="STATE_788"
+
+	state_category = city
+	resources={
+		steel=25.000
+	}
+	history={
+		victory_points = {
+			11586 35 
+		}
+		owner = SER
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 4
+			air_base = 5
+
+		}
+		add_core_of = YUG
+		add_core_of = SER
+
+	}
+	provinces={
+		3609 11580 11586 
+	}
+	manpower=4700000
+	buildings_max_level_factor=1.000
+}

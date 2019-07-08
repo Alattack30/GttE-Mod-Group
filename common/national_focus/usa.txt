@@ -1,0 +1,139 @@
+focus_tree = {
+	id = usa_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = USA
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+	focus = {
+		id = USA_monroe_doctrine
+		icon = GFX_focus_generic_treaty
+		x = 14
+		y = 0
+		offset = {
+			x = -12
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+
+		mutually_exclusive = { focus = USA_embrace_imperialism }
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = democratic
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = USA_embrace_imperialism
+		icon = GFX_focus_eng_imperial_federation
+		x = 18
+		y = 0
+		offset = {
+			x = -16
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+
+		mutually_exclusive = { focus = USA_monroe_doctrine }
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = democratic
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+			add_timed_idea = {
+				idea = nationalism
+				days = 720
+			}
+		}
+	}
+
+#Imperialism#Path#
+
+focus = {
+		id = USA_invade_cuba
+		icon = GFX_focus_generic_position_armies
+		prerequisite = { focus = USA_embrace_imperialism }
+		x = 18
+		y = 2
+		offset = {
+			x = -16
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = democratic
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+              type = take_state_focus
+              target = CUB
+              generator = { 315 }
+            }
+		}
+	}
